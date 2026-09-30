@@ -24,8 +24,8 @@ function validatePatientInput(body) {
     throw validationError('fullName is required and must be 255 characters or fewer');
   }
 
-  if (typeof CIN !== 'string' || !CIN.trim() || CIN.trim().length > 50) {
-    throw validationError('CIN is required and must be 50 characters or fewer');
+  if (typeof CIN !== 'string' || !CIN.trim() || CIN.trim().length > 20) {
+    throw validationError('CIN is required and must be 20 characters or fewer');
   }
 
   if (typeof phone !== 'string' || !phone.trim() || phone.trim().length > 50) {
